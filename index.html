@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
+    <link rel="stylesheet" href="./index.css"">
   <head>
-    <title>Simple Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script type="text/javascript" src="./js/script.js"></script>
+    <title>トップ画面</title>
   </head>
+  <meta name="viewport" content="width=device-width,
+ initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
   <body>
-    <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=xxxx&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+    <h1>田舎神社に行こう</h1>
+    <ul class="shrine-tiles">
+      <li><a href="./category/ishidan.html"><img src="./img/top/石段.jpeg" alt="石段" title="石段"></a></li>
+      <li><a href="./category/torii.html"><img src="./img/top/鳥居.jpeg" alt="鳥居" title="鳥居"></a></li>
+      <li><a href="./category/komainu.html"><img src="./img/top/狛犬.jpeg" alt="狛犬" title="狛犬"></a></li>
+    </ul>
+    <ul class="shrine-tiles">
+      <li><a href="./category/sugibayashi.html"><img src="./img/top/杉林.jpeg" alt="杉林" title="杉林"></a></li>
+      <li><a href="./category/hikyou.html"><img src="./img/top/秘境.jpeg" alt="秘境" title="秘境"></a></li>
+      <li><a href="./category/umi.html"><img src="./img/top/海.jpeg" alt="海" title="海"></a></li>
+    </ul>
+    <ul class="shrine-tiles">
+      <li><a href="./category/yama.html"><img src="./img/top/山.jpeg" alt="山" title="山"></a></li>
+      <li><a href="./category/tanbo.html"><img src="./img/top/田んぼ.jpeg" alt="田んぼ" title="田んぼ"></a></li>
+      <li><a href="./category/koke.html"><img src="./img/top/苔.jpeg" alt="苔" title="苔"></a></li>
+    </ul>
+    <ul class="shrine-tiles">
+      <li><a href="./category/takebayashi.html"><img src="./img/top/竹林.jpeg" alt="竹林" title="竹林"></a></li>
+      <li><a href="./category/iwakabe.html"><img src="./img/top/岩壁.jpeg" alt="岩壁" title="岩壁"></a></li>
+      <li><a href="./category/kyoboku.html"><img src="./img/top/巨木.jpeg" alt="巨木" title="巨木"></a></li>
+    </ul>
   </body>
 </html>
