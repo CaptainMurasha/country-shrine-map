@@ -1,3 +1,12 @@
+html,
+body {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: #60665d;
+}
+
 /** トップページ */
 .shrine-tiles{
 	display: flex;
@@ -5,15 +14,19 @@
   margin:0;
   padding:0;
 }
-.shrine-tiles li {
-	width: 33%;/* 画像を横に3つ並べる場合 */
-	padding:0 5px;/*画像の左右に余白 */
+.shrine-tiles div {
 	box-sizing:border-box;
   list-style: none; /* liの謎マーカーを消す */
 }
-.shrine-tiles li img {
+.shrine-tiles img {
 	width:100%;
 	max-width:100%; /* 画像のはみだしを防ぐ */
 	height: auto; /* 画像の縦横比を維持 */
 	object-fit: cover; /* 画像トリム */
+}
+
+.col-4 {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
 }
