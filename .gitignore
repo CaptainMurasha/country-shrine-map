@@ -1,1 +1,3 @@
 out/
+.yarn/*
+.next/*
