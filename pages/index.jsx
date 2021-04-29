@@ -23,8 +23,8 @@ export default function home() {
   categories.forEach(category => {
     categoryList.push(
       <div className="col-4" key={category.link}>
-        <Link 
-          href={`/articles/${category.link}`}><a><img src={`/images/top/${category.name}.jpeg`}
+        <Link href={`/articles/${category.link}`}>
+          <a><img src={`/images/top/${category.name}.jpeg`}
           alt={category.name}
           title={category.name} /></a></Link></div>
     );
