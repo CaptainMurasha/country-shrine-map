@@ -1,39 +1,56 @@
 
 import Head from 'next/head';
 
+const contents = [
+  {key: 1, city: "君津市", aza: "東粟倉", name: "愛宕神社"},
+  {key: 2, city: "鴨川市", aza: "上小原", name: "白滝山不動教会"},
+  {key: 3, city: "君津市", aza: "坂畑", name: "山神社"},
+]
+
 export default function articleIshidan() {
+
+  // コンテンツリスト生成
+  const contentList = [];
+  contents.forEach(content => {
+    contentList.push(
+      <div className="col-4" key={content.key}>
+        <div className="card mb-4 shadow-sm">
+          <img className="card-img-top" src={`/images/articles/ishidan/${content.city}${content.aza}${content.name}.jpeg`} />
+          <div className="card-body">
+            <p className="card-text">
+              {content.city} {content.aza} {content.name}
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  });
+  
   return (
     <>
       <link rel="stylesheet" href="./category.css"></link>
       <Head>
-        <title>田舎神社へ行こう - 石段</title>
+        <title>田舎神社へ行こう - 苔</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
-      <section className="wrapper">
-        <div className="container">
-          <div className="content">
-            <div className="content-item">
-              <img src="../img/top/石段.jpeg" className="image" />
-            </div>
-            <div className="content-item">
-              <div className="text">
-                <h2 className="heading">石段</h2>
-                <p>神社へと続くどこかへ吸い込まれそうな石段。悠久の時の中で苔むして摩耗したさまは神社の歴史を今に伝える。転びやすいので登る時は要注意。</p>
-              </div>
+      <div className="page-header">
+        <h1>田舎神社へ行こう - 苔</h1>
+        <img src="/images/top/苔.jpeg" className="image" />
+        <h2>苔</h2>
+        <p></p>
+      </div>
+
+      <div className="album py-5 bg-light">
+        <div className="album py-5 bg-light">
+          <div className="container">
+            <div className="row">
+              {contentList}
             </div>
           </div>
         </div>
-      </section>
-
-      <article className="recommends">
-        <h1>おすすめ</h1>
-        <article className="recommend">
-          <p>君津市東粟倉 愛宕神社</p>
-          <img src="../img/articles/isidan/君津市東粟倉愛宕神社.jpeg" />
-        </article>
-      </article>
+      </div>
     </>
   );
 }

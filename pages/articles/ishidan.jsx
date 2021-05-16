@@ -1,7 +1,31 @@
 
 import Head from 'next/head';
 
+const contents = [
+  {key: 1, city: "君津市", aza: "東粟倉", name: "愛宕神社"},
+  {key: 2, city: "鴨川市", aza: "上小原", name: "白滝山不動教会"},
+  {key: 3, city: "君津市", aza: "坂畑", name: "山神社"},
+]
+
 export default function articleIshidan() {
+
+  // コンテンツリスト生成
+  const contentList = [];
+  contents.forEach(content => {
+    contentList.push(
+      <div className="col-4" key={content.key}>
+        <div className="card mb-4 shadow-sm">
+          <img className="card-img-top" src={`/images/articles/ishidan/${content.city}${content.aza}${content.name}.jpeg`} />
+          <div className="card-body">
+            <p className="card-text">
+              {content.city} {content.aza} {content.name}
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  });
+  
   return (
     <>
       <link rel="stylesheet" href="./category.css"></link>
@@ -22,39 +46,7 @@ export default function articleIshidan() {
         <div className="album py-5 bg-light">
           <div className="container">
             <div className="row">
-              <div className="col-4">
-                <div className="card mb-4 shadow-sm">
-                  <img className="card-img-top" src="/images/articles/ishidan/君津市東粟倉愛宕神社.jpeg" />
-                  <div className="card-body">
-                    <p className="card-text">
-                      君津市 東粟倉<br />
-                      愛宕神社
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="card mb-4 shadow-sm">
-                  <img className="card-img-top" src="/images/articles/ishidan/君津市東粟倉愛宕神社.jpeg" />
-                  <div className="card-body">
-                    <p className="card-text">
-                      君津市 東粟倉<br />
-                      愛宕神社
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="card mb-4 shadow-sm">
-                  <img className="card-img-top" src="/images/articles/ishidan/君津市東粟倉愛宕神社.jpeg" />
-                  <div className="card-body">
-                    <p className="card-text">
-                      君津市 東粟倉<br />
-                      愛宕神社
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {contentList}
             </div>
           </div>
         </div>
