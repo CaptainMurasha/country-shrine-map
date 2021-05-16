@@ -28,7 +28,6 @@ export default function articleIshidan() {
   
   return (
     <>
-      <link rel="stylesheet" href="./category.css"></link>
       <Head>
         <title>田舎神社へ行こう - 苔</title>
         <link rel="icon" href="/favicon.ico" />
