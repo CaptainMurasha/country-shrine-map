@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 苔</h1>
         <img src="/images/top/苔.jpeg" className="image" />
         <h2>苔</h2>
-        <p></p>
+        <p>参道を覆う一面の深緑。目に優しく心も癒される。</p>
       </div>
 
       <div className="album py-5 bg-light">

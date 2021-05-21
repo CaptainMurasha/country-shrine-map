@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 山</h1>
         <img src="/images/top/山.jpeg" className="image" />
         <h2>山</h2>
-        <p></p>
+        <p>山の神様。かつては重要な村の資源だった山も、今では手入れしないとすぐ荒れ果てるようになってしまった。発見難度、到達難度ともに高いことが多い。</p>
       </div>
 
       <div className="album py-5 bg-light">

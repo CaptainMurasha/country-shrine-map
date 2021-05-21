@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 巨木</h1>
         <img src="/images/top/巨木.jpeg" className="image" />
         <h2>巨木</h2>
-        <p></p>
+        <p>神社とともに歴史を歩んできた大きな木。それ自体が信仰対象になっていることも珍しくない。</p>
       </div>
 
       <div className="album py-5 bg-light">

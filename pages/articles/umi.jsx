@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 海</h1>
         <img src="/images/top/海.jpeg" className="image" />
         <h2>海</h2>
-        <p></p>
+        <p>海を臨む神社。鳥居越しに見る大海原は特別な意味を持つように思える。</p>
       </div>
 
       <div className="album py-5 bg-light">

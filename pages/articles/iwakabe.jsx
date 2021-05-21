@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 岩壁</h1>
         <img src="/images/top/岩壁.jpeg" className="image" />
         <h2>岩壁</h2>
-        <p></p>
+        <p>社殿が巨岩に半分めり込むように造られた、非常に珍しいタイプ。その威容は圧巻の一言。</p>
       </div>
 
       <div className="album py-5 bg-light">

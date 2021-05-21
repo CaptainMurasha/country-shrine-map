@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 秘境</h1>
         <img src="/images/top/秘境.jpeg" className="image" />
         <h2>秘境</h2>
-        <p></p>
+        <p>山あいの孤立した村に佇む神社。「ここではないどこか」に迷い込んでしまったような気分になる。</p>
       </div>
 
       <div className="album py-5 bg-light">

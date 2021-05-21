@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 田んぼ</h1>
         <img src="/images/top/田んぼ.jpeg" className="image" />
         <h2>田んぼ</h2>
-        <p></p>
+        <p>日本の原風景。田舎の代名詞。一面の稲穂を見守るように佇む鳥居になぜか「ふるさと」を思い出す。</p>
       </div>
 
       <div className="album py-5 bg-light">

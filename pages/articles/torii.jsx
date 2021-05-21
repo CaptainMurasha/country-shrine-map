@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 鳥居</h1>
         <img src="/images/top/鳥居.jpeg" className="image" />
         <h2>鳥居</h2>
-        <p></p>
+        <p>神社の代名詞であり、周囲に神社の存在を知らせる重要な存在。中には素晴らしいロケーションの鳥居もある。</p>
       </div>
 
       <div className="album py-5 bg-light">

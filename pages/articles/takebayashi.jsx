@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 竹林</h1>
         <img src="/images/top/竹林.jpeg" className="image" />
         <h2>竹林</h2>
-        <p></p>
+        <p>よく手入れされた竹林は有名な観光地にも挙げられることがある。田舎神社の竹林は、そういう場所に負けない魅力がある。</p>
       </div>
 
       <div className="album py-5 bg-light">

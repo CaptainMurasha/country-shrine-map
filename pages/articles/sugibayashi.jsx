@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 杉林</h1>
         <img src="/images/top/杉林.jpeg" className="image" />
         <h2>杉林</h2>
-        <p></p>
+        <p>林立する杉が参道の奥へ続く。遮った日差しがわずかに溢れる様は幻想的。</p>
       </div>
 
       <div className="album py-5 bg-light">

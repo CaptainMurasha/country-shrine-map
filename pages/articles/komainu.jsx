@@ -38,7 +38,7 @@ export default function articleIshidan() {
         <h1>田舎神社へ行こう - 狛犬</h1>
         <img src="/images/top/狛犬.jpeg" className="image" />
         <h2>狛犬</h2>
-        <p></p>
+        <p>流麗な技巧で造られた傑作から村の石工が頑張って作ったと思われる個性的な作品まで。</p>
       </div>
 
       <div className="album py-5 bg-light">
