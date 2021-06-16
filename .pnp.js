@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:4.6.0"],
+            ["bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:5.0.0-beta3"],
             ["next", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:10.1.3"],
             ["react", "npm:17.0.2"],
             ["react-bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:1.5.2"],
@@ -637,27 +637,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["bootstrap", [
-        ["npm:4.6.0", {
-          "packageLocation": "./.yarn/cache/bootstrap-npm-4.6.0-db76aee8bd-66019b6969.zip/node_modules/bootstrap/",
+        ["npm:5.0.0-beta3", {
+          "packageLocation": "./.yarn/cache/bootstrap-npm-5.0.0-beta3-cd12414a2c-ce64d3f703.zip/node_modules/bootstrap/",
           "packageDependencies": [
-            ["bootstrap", "npm:4.6.0"]
+            ["bootstrap", "npm:5.0.0-beta3"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:4.6.0", {
-          "packageLocation": "./.yarn/$$virtual/bootstrap-virtual-4fad7ffbb2/0/cache/bootstrap-npm-4.6.0-db76aee8bd-66019b6969.zip/node_modules/bootstrap/",
+        ["virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:5.0.0-beta3", {
+          "packageLocation": "./.yarn/$$virtual/bootstrap-virtual-9e3e5de101/0/cache/bootstrap-npm-5.0.0-beta3-cd12414a2c-ce64d3f703.zip/node_modules/bootstrap/",
           "packageDependencies": [
-            ["bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:4.6.0"],
-            ["@types/jquery", null],
-            ["@types/popper.js", null],
-            ["jquery", null],
-            ["popper.js", null]
+            ["bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:5.0.0-beta3"],
+            ["@popperjs/core", null],
+            ["@types/popperjs__core", null]
           ],
           "packagePeers": [
-            "@types/jquery",
-            "@types/popper.js",
-            "jquery",
-            "popper.js"
+            "@popperjs/core",
+            "@types/popperjs__core"
           ],
           "linkType": "HARD",
         }]
@@ -1083,7 +1079,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["country-shrine-map", "workspace:."],
-            ["bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:4.6.0"],
+            ["bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:5.0.0-beta3"],
             ["next", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:10.1.3"],
             ["react", "npm:17.0.2"],
             ["react-bootstrap", "virtual:2e5aee41e937f658d80ac307331181c8c0cb5eaf08008837c8a982e28daa1fb41e79dd3a213cc3bd3fef6b7832ed1098ac88a5841b0f148446d4ef9ac746683b#npm:1.5.2"],
