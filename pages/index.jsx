@@ -1,32 +1,26 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { getAllCategories } from '../lib/posts'
 
-const categories = [
-  {link:"ishidan", name:"石段"},
-  {link:"komainu", name:"狛犬"},
-  {link:"torii", name:"鳥居"},
-  {link:"sugibayashi", name:"杉林"},
-  {link:"hikyou", name:"秘境"},
-  {link:"umi", name:"海"},
-  {link:"yama", name:"山"},
-  {link:"tanbo", name:"田んぼ"},
-  {link:"koke", name:"苔"},
-  {link:"takebayashi", name:"竹林"},
-  {link:"iwakabe", name:"岩壁"},
-  {link:"kyoboku", name:"巨木"}
-]
-  
-export default function home() {
+export async function getStaticProps() {
+  const allCategories = getAllCategories()
+  return {
+    props: {
+      allCategories
+    }
+  }
+}
+
+export default function Home({ allCategories }) {
 
   // 画像リスト生成
   const categoryList = [];
-  categories.forEach(category => {
+  allCategories.forEach(category => {
     categoryList.push(
-      <div className="col-4" key={category.link}>
-        <Link href={`/articles/${category.link}`}>
-          <a><img src={`/images/top/${category.name}.jpeg`}
-          alt={category.name}
-          title={category.name} /></a></Link></div>
+      <div className="col-4" key={category}>
+        <Link href={`/posts/${category}`}>
+          <a><img src={`/images/top/${category}.jpeg`}
+          title={category} /></a></Link></div>
     );
   });
 
