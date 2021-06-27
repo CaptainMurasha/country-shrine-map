@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { getAllCategoriesIds, getAllCategoriesData } from "../../lib/posts"
 
 export default function Post({ categoriesData }) {
-  const id = categoriesData.id;
+  const categoryIds = categoriesData.categoryIds;
   const categoryName = categoriesData.categoryName;
   const overview = categoriesData.overview;
   const contents = categoriesData.contents;
@@ -13,7 +13,7 @@ export default function Post({ categoriesData }) {
     contentList.push(
       <div className="col-4" key={content.key}>
         <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={`/images/articles/${id}/${content.city}${content.aza}${content.name}.jpeg`} />
+          <img className="card-img-top" src={`/images/articles/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`} />
           <div className="card-body">
             <p className="card-text">
               {content.city} {content.aza} {content.name}
@@ -34,7 +34,7 @@ export default function Post({ categoriesData }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
       <div className="page-header">
         <h1>田舎神社へ行こう - {categoryName}</h1>
-        <img src={`/images/top/${id}.jpeg`} className="image" />
+        <img src={`/images/top/${categoryIds}.jpeg`} className="image" />
         <h2>{categoryName}</h2>
         <p>{overview}</p>
       </div>
@@ -61,7 +61,7 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps({ params }) {
-  const categoriesData = getAllCategoriesData(params.id)
+  const categoriesData = getAllCategoriesData(params.categoryIds)
   return {
     props: {
       categoriesData
