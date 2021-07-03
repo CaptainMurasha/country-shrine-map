@@ -10,20 +10,22 @@ export default function Post({ categoriesData }) {
 
   // コンテンツリスト生成
   const contentList = [];
-  contents.forEach(content => {
+  for (let i = 0; i < contents.length; i++) {
+    const content = contents[i];
     contentList.push(
-      <div className="col-4" key={content.key}>
+      <div className="col-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={`/images/articles/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`} />
+          <img className="card-img-top" src={`/images/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`} />
           <div className="card-body">
             <p className="card-text">
-              {content.city} {content.aza} {content.name}
+              {content.city} {content.aza}<br />
+              {content.name}
             </p>
           </div>
         </div>
       </div>
     )
-  });
+  }
 
   return (
     <>
