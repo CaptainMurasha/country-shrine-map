@@ -1,6 +1,6 @@
 import Header from '../layouts/Header';
 
-import { getAllCategoriesIds, getAllCategoriesData } from "../../lib/shrines"
+import { getAllShrinesIds, getAllShrinesData } from "../../lib/shrines"
 
 export default function Post({ categoriesData }) {
   const categoryIds = categoriesData.categoryIds;
@@ -53,7 +53,7 @@ export default function Post({ categoriesData }) {
 }
 
 export function getStaticPaths() {
-  const paths = getAllCategoriesIds()
+  const paths = getAllShrinesIds()
   return {
     paths,
     fallback: true
@@ -61,7 +61,7 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps({ params }) {
-  const categoriesData = getAllCategoriesData(params.categoryIds)
+  const categoriesData = getAllShrinesData(params.categoryIds)
   return {
     props: {
       categoriesData

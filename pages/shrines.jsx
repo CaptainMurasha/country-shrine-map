@@ -1,9 +1,9 @@
 import Header from './layouts/Header';
 import Link from 'next/link';
-import { getAllCategories } from '../lib/shrines'
+import { getAllShrines } from '../lib/shrines'
 
 export async function getStaticProps() {
-  const allCategories = getAllCategories()
+  const allCategories = getAllShrines()
   return {
     props: {
       allCategories
