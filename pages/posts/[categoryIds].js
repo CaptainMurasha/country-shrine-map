@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Header from '../layouts/Header';
+
 import { getAllCategoriesIds, getAllCategoriesData } from "../../lib/posts"
 
 export default function Post({ categoriesData }) {
@@ -26,10 +27,9 @@ export default function Post({ categoriesData }) {
 
   return (
     <>
-      <Head>
-        <title>田舎神社へ行こう - {categoryName}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <header>
+        <Header />
+      </header>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
       <div className="page-header">
