@@ -13,10 +13,16 @@ const Header = () => {
         <div className="container d-flex justify-content-between">
           <ul className="nav nav-tabs">
             <li className="nav-item">
+              <Link href="/"><a className="nav-link">トップページ</a></Link>
+            </li>
+            <li className="nav-item">
               <Link href="/about"><a className="nav-link">About</a></Link>
             </li>
             <li className="nav-item">
-              <Link href="/"><a className="nav-link">田舎神社</a></Link>
+              <Link href="/shrines"><a className="nav-link">田舎神社</a></Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/miyabori"><a className="nav-link">宮彫</a></Link>
             </li>
           </ul>
         </div>

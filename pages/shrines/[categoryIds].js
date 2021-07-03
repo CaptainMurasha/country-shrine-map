@@ -1,6 +1,6 @@
 import Header from '../layouts/Header';
 
-import { getAllCategoriesIds, getAllCategoriesData } from "../../lib/posts"
+import { getAllCategoriesIds, getAllCategoriesData } from "../../lib/shrines"
 
 export default function Post({ categoriesData }) {
   const categoryIds = categoriesData.categoryIds;
