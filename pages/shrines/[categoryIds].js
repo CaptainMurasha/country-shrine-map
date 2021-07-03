@@ -1,6 +1,7 @@
 import Header from '../layouts/Header';
 
 import { getAllShrinesIds, getAllShrinesData } from "../../lib/shrines"
+import { HotokamiPage } from '../icons/SocialMedia';
 
 export default function Post({ categoriesData }) {
   const categoryIds = categoriesData.categoryIds;
@@ -19,7 +20,8 @@ export default function Post({ categoriesData }) {
           <div className="card-body">
             <p className="card-text">
               {content.city} {content.aza}<br />
-              {content.name}
+              {content.name}<br />
+              {HotokamiPage(content.url)}
             </p>
           </div>
         </div>

@@ -2,12 +2,12 @@
   "categoryName":"秘境",
   "overview":"山あいの孤立した村に佇む神社。「ここではないどこか」に迷い込んでしまったような気分になる。",
   "contents":[
-    {"city": "鴨川市", "aza": "四方木", "name": "熊野神社"},
-    {"city": "鴨川市", "aza": "打墨", "name": "立岩観音堂"},
-    {"city": "館山市", "aza": "岡田", "name": "風早不動尊"},
-    {"city": "君津市", "aza": "旅名", "name": "寂光不動尊"},
-    {"city": "大多喜町", "aza": "伊保田", "name": "熊野神社"},
-    {"city": "富津市", "aza": "相川", "name": "愛宕神社"},
-    {"city": "富津市", "aza": "竹岡", "name": "稲荷神社"}
+    {"city": "鴨川市", "aza": "四方木", "name": "熊野神社", "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dyzg/146789/"},
+    {"city": "鴨川市", "aza": "打墨", "name": "立岩観音堂", "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dygg/149817/"},
+    {"city": "館山市", "aza": "岡田", "name": "風早不動尊", "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtaty/Dptta/152231/"},
+    {"city": "君津市", "aza": "旅名", "name": "寂光不動尊", "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/153900/"},
+    {"city": "大多喜町", "aza": "伊保田", "name": "熊野神社", "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatm/Dmrgg/102243/"},
+    {"city": "富津市", "aza": "相川", "name": "愛宕神社", "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmytr/155105/"},
+    {"city": "富津市", "aza": "竹岡", "name": "稲荷神社", "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dsgtr/86231/"}
   ]
 }
