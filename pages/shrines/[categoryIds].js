@@ -16,7 +16,7 @@ export default function Post({ categoriesData }) {
     contentList.push(
       <div className="col-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={`/images/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`} />
+          <img className="card-img-top" src={`/images/contents/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`} />
           <div className="card-body">
             <p className="card-text">
               {content.city} {content.aza}<br />
@@ -38,7 +38,7 @@ export default function Post({ categoriesData }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
       <div className="page-header">
         <h1>田舎神社へ行こう - {categoryName}</h1>
-        <img src={`/images/top/${categoryIds}.jpeg`} className="image" />
+        <img src={`/images/top/shrines/${categoryIds}.jpeg`} className="image" />
         <h2>{categoryName}</h2>
         <p>{overview}</p>
       </div>

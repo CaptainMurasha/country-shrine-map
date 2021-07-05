@@ -1,5 +1,4 @@
 out/
 .yarn/*
 .next/*
-public/images/miyabori/*
-public/images/shrines/*
+public/images/contents/*

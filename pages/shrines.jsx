@@ -19,7 +19,7 @@ export default function Shrines({ allCategories }) {
     categoryList.push(
       <div className="col-4" key={category}>
         <Link href={`/shrines/${category}`}>
-          <a><img src={`/images/top/${category}.jpeg`}
+          <a><img src={`/images/top/shrines/${category}.jpeg`}
           title={category} /></a></Link></div>
     );
   });
