@@ -1,7 +1,7 @@
 import Header from '../layouts/Header';
 
 import { getAllShrinesIds, getAllShrinesData } from "../../lib/shrines"
-import { HotokamiPage } from '../icons/SocialMedia';
+import { HotokamiPage, GoogleOnMarker } from '../icons/SocialMedia';
 
 export default function Post({ categoriesData }) {
   const categoryIds = categoriesData.categoryIds;
@@ -21,7 +21,7 @@ export default function Post({ categoriesData }) {
             <p className="card-text">
               {content.city} {content.aza}<br />
               {content.name}<br />
-              {HotokamiPage(content.url)}
+              {HotokamiPage(content.url)} {GoogleOnMarker(content.lat, content.lang)}
             </p>
           </div>
         </div>

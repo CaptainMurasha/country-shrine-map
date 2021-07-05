@@ -1,3 +1,7 @@
+/**
+ * Googleプロフィール画面に遷移するボタンを取得
+ * @returns Googleプロフィール画面へ遷移するボタン
+ */
 const Google = () => {
   return (
     <>
@@ -12,6 +16,30 @@ const Google = () => {
   )
 }
 
+/**
+ * マーカー付きGoogleMapに遷移するボタンを取得
+ * @param {Number} lat 緯度
+ * @param {Number} lang 軽度
+ * @returns マーカー付きGoogleMapを表示するボタン
+ */
+const GoogleOnMarker = (lat, lang) => {
+  return (
+    <>
+      <a href={`https://maps.google.com/maps?q=${lat},${lang}&z=15`} target="_blank" rel="noopener noreferrer">
+        <button type="button" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-google" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+        </button>
+      </a>
+    </>
+  )
+}
+
+/**
+ * Instagramプロフィールに遷移するボタンを取得
+ * @returns Instagramプロフィールを表示するボタン
+ */
 const Instagram = () => {
   return (
     <>
@@ -26,6 +54,10 @@ const Instagram = () => {
   )
 }
 
+/**
+ * ホトカミプロフィールに遷移するボタンを取得
+ * @returns ホトカミプロフィールを表示するボタン
+ */
 const Hotokami = () => {
   return (
     <>
@@ -41,6 +73,11 @@ const Hotokami = () => {
   )
 }
 
+/**
+ * ホトカミの寺社ページに遷移するボタンを取得
+ * @param {string} url 寺社ページリンク
+ * @returns ホトカミの寺社ページに遷移するボタン
+ */
 const HotokamiPage = (url) => {
   return (
     <>
@@ -56,6 +93,10 @@ const HotokamiPage = (url) => {
   )
 }
 
+/**
+ * Twitterプロフィールに遷移するボタンを取得
+ * @returns Twitterプロフィールに遷移するボタンを取得
+ */
 const Twitter = () => {
   return (
     <>
@@ -72,6 +113,7 @@ const Twitter = () => {
 
 export {
   Google
+  ,GoogleOnMarker
   ,Instagram
   ,Hotokami
   ,HotokamiPage
