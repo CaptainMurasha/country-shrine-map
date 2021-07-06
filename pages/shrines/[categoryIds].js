@@ -16,7 +16,9 @@ export default function Post({ categoriesData }) {
     contentList.push(
       <div className="col-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={`/images/contents/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`} />
+          <img className="card-img-top" src={process.env.NODE_ENV === 'development' ? 
+            `/images/contents/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`
+            : content.imageUrl} />
           <div className="card-body">
             <p className="card-text">
               {content.city} {content.aza}<br />
