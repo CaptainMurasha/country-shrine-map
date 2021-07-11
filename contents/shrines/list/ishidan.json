@@ -1,11 +1,11 @@
 [
-    {"city": "君津市", "aza": "東粟倉", "name": "愛宕神社", "lat":35.2498185, "lang":140.0029165
-      , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmytk/80447/"
-      , "imageUrl":""},
-    {"city": "鴨川市", "aza": "上小原", "name": "白滝山不動教会", "lat":35.1115054, "lang":140.0286981
-      , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dksya/48935/"
-      , "imageUrl":""},
-    {"city": "君津市", "aza": "坂畑", "name": "山神社", "lat":35.2335318, "lang":140.0934536
-      , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/107994/"
-      , "imageUrl":""}
+  {"city": "君津市", "aza": "東粟倉", "name": "愛宕神社", "lat":35.2498185, "lang":140.0029165
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmytk/80447/"
+    , "imageUrl":""},
+  {"city": "鴨川市", "aza": "上小原", "name": "白滝山不動教会", "lat":35.1115054, "lang":140.0286981
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dksya/48935/"
+    , "imageUrl":""},
+  {"city": "君津市", "aza": "坂畑", "name": "山神社", "lat":35.2335318, "lang":140.0934536
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/107994/"
+    , "imageUrl":""}
 ]

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const TopAlbum = ({categoriesData}) => {
   const contentList = [];
   for (let i = 0; i < categoriesData.length; i++) {
@@ -5,11 +7,16 @@ const TopAlbum = ({categoriesData}) => {
     contentList.push(
       <div className="col-4" key={content.categoryId}>
         <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={`/images/top/shrines/${content.categoryId}.jpeg`} />
+          <Link href={`/shrines/${content.categoryId}`}>
+            <img className="card-img-top" src={`/images/top/shrines/${content.categoryId}.jpeg`} />
+          </Link>
           <div className="card-body">
             <p className="card-text">
               {content.categoryName}<br />
               {content.overview}<br />
+              <button type='button'>
+                <Link href={`/shrines/${content.categoryId}`}>一覧へ</Link>
+              </button>
             </p>
           </div>
         </div>
