@@ -2,10 +2,9 @@ import Header from '../layouts/Header';
 
 import { getAllShrinesIds, getAllShrinesData } from "../../lib/shrines"
 import { HotokamiPage, GoogleOnMarker } from '../icons/SocialMedia';
-import { Pagination } from '../layouts/Pagination'
 
 export default function Post({ categoriesData }) {
-  const categoryId = categoriesData.categoryId;
+  const categoryIds = categoriesData.categoryIds;
   const categoryName = categoriesData.categoryName;
   const overview = categoriesData.overview;
   const contents = categoriesData.contents;
@@ -18,7 +17,7 @@ export default function Post({ categoriesData }) {
       <div className="col-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
           <img className="card-img-top" src={process.env.NODE_ENV === 'development' ? 
-            `/images/contents/shrines/${categoryId}/${content.city}${content.aza}${content.name}.jpeg`
+            `/images/contents/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`
             : content.imageUrl} />
           <div className="card-body">
             <p className="card-text">
@@ -41,7 +40,7 @@ export default function Post({ categoriesData }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
       <div className="page-header">
         <h1>田舎神社へ行こう - {categoryName}</h1>
-        <img src={`/images/top/shrines/${categoryId}.jpeg`} className="image" />
+        <img src={`/images/top/shrines/${categoryIds}.jpeg`} className="image" />
         <h2>{categoryName}</h2>
         <p>{overview}</p>
       </div>
@@ -55,7 +54,6 @@ export default function Post({ categoriesData }) {
           </div>
         </div>
       </div>
-      <Pagination totalCount={contentList.length} categoryName={categoryId}/>
     </>
   );
 }
@@ -69,7 +67,7 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps({ params }) {
-  const categoriesData = getAllShrinesData(params.categoryId)
+  const categoriesData = getAllShrinesData(params.categoryIds)
   return {
     props: {
       categoriesData
