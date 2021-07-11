@@ -29,17 +29,25 @@ body {
 	padding-bottom: 5px;
 }
 
-/* 見出し */
-.page-header {
+h1 {
 	text-align: center;
 }
-.page-header h1 {
-	font-size: vmin; /* 改行させたくない。なぜか効かない */
+
+/* 見出し */
+.overview {
+	text-align: center;
 }
-.page-header img {
+.overview img {
 	width: 80%;
 	padding: 10px 0px;
 }
+
+/* コンテンツ */
 .card-text {
 	font-size: 5px;
+}
+
+/* about */
+.about {
+	text-align: center;
 }

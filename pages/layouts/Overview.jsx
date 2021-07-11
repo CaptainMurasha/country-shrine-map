@@ -1,11 +1,21 @@
 const Overview = ({categoryIds, categoryName, overview}) => {
+  // 背景画像を設定 透過のためのbefore設定はcssに切り出す
+  const jumbotronStyle = {
+    background:`url(${`/images/top/shrines/${categoryIds}.jpeg`}) center no-repeat; background-size: cover`,
+    background: '#242134',
+    background: '-webkit-linear-gradient(to right, #9E9AB4, #242134)',
+    background: 'linear-gradient(to right, #9E9AB4, #242134)'
+  }
+
   return (
     <>
-      <div className="page-header">
-        <h1>田舎神社へ行こう - {categoryName}</h1>
-        <img src={`/images/top/shrines/${categoryIds}.jpeg`} className="image" />
-        <h2>{categoryName}</h2>
-        <p>{overview}</p>
+      <div className="overview">
+        <div className="jumbotron p-4 p-md-5 rounded text-white" style={jumbotronStyle}>
+          <div className="page-header">
+            <h2>{categoryName}</h2>
+            <p>{overview}</p>
+          </div>
+        </div>
       </div>
     </>
   )
