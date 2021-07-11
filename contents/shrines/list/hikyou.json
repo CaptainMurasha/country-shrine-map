@@ -1,0 +1,23 @@
+[
+  {"city": "鴨川市", "aza": "四方木", "name": "熊野神社", "lat":35.176536, "lang":140.139727
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dyzg/146789/"
+    , "imageUrl":""},
+  {"city": "鴨川市", "aza": "打墨", "name": "立岩観音堂", "lat":35.1331846, "lang":140.0859936
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dygg/149817/"
+    , "imageUrl":""},
+  {"city": "館山市", "aza": "岡田", "name": "風早不動尊", "lat":34.9598552, "lang":139.8610168
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtaty/Dptta/152231/"
+    , "imageUrl":""},
+  {"city": "君津市", "aza": "旅名", "name": "寂光不動尊", "lat":35.1932209, "lang":140.030256
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/153900/"
+    , "imageUrl":""},
+  {"city": "大多喜町", "aza": "伊保田", "name": "熊野神社", "lat":35.2337548, "lang":140.1857975
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatm/Dmrgg/102243/"
+    , "imageUrl":""},
+  {"city": "富津市", "aza": "相川", "name": "愛宕神社", "lat":35.1934178, "lang":139.8763552
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmytr/155105/"
+    , "imageUrl":""},
+  {"city": "富津市", "aza": "竹岡", "name": "稲荷神社", "lat":35.1884559, "lang":139.8639857
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dsgtr/86231/"
+    , "imageUrl":""}
+]

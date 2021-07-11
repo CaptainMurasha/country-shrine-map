@@ -1,7 +1,4 @@
-{
-  "categoryName":"石段",
-  "overview":"神社へと続くどこかへ吸い込まれそうな石段。悠久の時の中で苔むして摩耗したさまは神社の歴史を今に伝える。転びやすいので登る時は要注意。",
-  "contents":[
+[
     {"city": "君津市", "aza": "東粟倉", "name": "愛宕神社", "lat":35.2498185, "lang":140.0029165
       , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmytk/80447/"
       , "imageUrl":""},
@@ -11,5 +8,4 @@
     {"city": "君津市", "aza": "坂畑", "name": "山神社", "lat":35.2335318, "lang":140.0934536
       , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/107994/"
       , "imageUrl":""}
-  ]
-}
+]

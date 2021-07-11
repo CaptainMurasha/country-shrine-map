@@ -4,12 +4,7 @@ import Album from '../layouts/Album';
 
 import { getAllShrinesIds, getAllShrinesData } from "../../lib/shrines"
 
-export default function Post({ categoriesData }) {
-  const categoryIds = categoriesData.categoryIds;
-  const categoryName = categoriesData.categoryName;
-  const overview = categoriesData.overview;
-  const contents = categoriesData.contents;
-
+export default function Post({ categoryIds, categoriesData }) {
   return (
     <>
       <header>
@@ -17,9 +12,9 @@ export default function Post({ categoriesData }) {
       </header>
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes,maximum-scale=2.0" />
-      <Overview categoryIds={categoryIds} categoryName={categoryName} overview={overview} />
+      {/* <Overview categoryName={categoryName} overview={overview} /> */}
 
-      <Album categoryIds={categoryIds} contents={contents} />
+      <Album categoryIds={categoryIds} contents={categoriesData} />
     </>
   );
 }
@@ -33,9 +28,11 @@ export function getStaticPaths() {
 }
 
 export function getStaticProps({ params }) {
+  const categoryIds = params.categoryIds;
   const categoriesData = getAllShrinesData(params.categoryIds)
   return {
     props: {
+      categoryIds,
       categoriesData
     }
   }
