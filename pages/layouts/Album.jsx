@@ -1,6 +1,6 @@
 import { HotokamiPage, GoogleOnMarker } from '../icons/SocialMedia';
 
-const Album = ({categoryIds, contents}) => {
+const Album = ({categoryId, contents}) => {
   const contentList = [];
   for (let i = 0; i < contents.length; i++) {
     const content = contents[i];
@@ -8,7 +8,7 @@ const Album = ({categoryIds, contents}) => {
       <div className="col-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
           <img className="card-img-top" src={process.env.NODE_ENV === 'development' ? 
-            `/images/contents/shrines/${categoryIds}/${content.city}${content.aza}${content.name}.jpeg`
+            `/images/contents/shrines/${categoryId}/${content.city}${content.aza}${content.name}.jpeg`
             : content.imageUrl} />
           <div className="card-body">
             <p className="card-text">
