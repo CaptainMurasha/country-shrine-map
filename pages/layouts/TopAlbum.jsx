@@ -8,14 +8,14 @@ const TopAlbum = ({categoriesData}) => {
       <div className="col-4" key={content.categoryId}>
         <div className="card mb-4 shadow-sm">
           <Link href={`/shrines/${content.categoryId}`}>
-            <img className="card-img-top" src={`/images/top/shrines/${content.categoryId}.jpeg`} />
+            <a><img className="card-img-top" src={`/images/top/shrines/${content.categoryId}.jpeg`} /></a>
           </Link>
           <div className="card-body">
             <p className="card-text">
               {content.categoryName}<br />
               {content.overview}<br />
               <button type='button'>
-                <Link href={`/shrines/${content.categoryId}`}>一覧へ</Link>
+                <Link href={`/shrines/${content.categoryId}`}><a>一覧へ</a></Link>
               </button>
             </p>
           </div>
