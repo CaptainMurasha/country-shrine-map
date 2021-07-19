@@ -1,10 +1,12 @@
 import Header from './layouts/Header';
 import Overview from './layouts/Overview';
 import TopAlbum from './layouts/TopAlbum';
-import { getAllShrines } from '../lib/shrines'
+import { readTopContents } from '../lib/utils'
+
+const pageName = 'shrines';
 
 export async function getStaticProps() {
-  const categoriesData = getAllShrines()
+  const categoriesData = readTopContents(pageName)
   return {
     props: {
       categoriesData

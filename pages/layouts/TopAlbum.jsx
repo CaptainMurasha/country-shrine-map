@@ -15,7 +15,7 @@ const TopAlbum = ({categoriesData}) => {
               {content.categoryName}<br />
               {content.overview}<br />
               <button type='button'>
-                <Link href={`/shrines/${content.categoryId}`}><a>一覧へ</a></Link>
+                <Link href={`/shrines/${content.categoryId}/1`}><a>一覧へ</a></Link>
               </button>
             </p>
           </div>
