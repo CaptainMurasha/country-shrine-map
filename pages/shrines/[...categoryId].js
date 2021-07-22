@@ -20,7 +20,7 @@ export default function Post({ categoryId, pageNumber, categoryOverview, categor
 
       <Album categoryId={categoryId} contents={categoriyList} />
 
-      <Pagination pageName={pageName} categoryId={categoryId} totalCount={totalCount} pageNumber={pageNumber} />
+      <Pagination pageName={pageName} categoryId={categoryId} totalCount={totalCount} current={pageNumber} />
     </>
   );
 }
