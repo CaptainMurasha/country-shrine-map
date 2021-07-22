@@ -3,10 +3,9 @@ import Overview from './layouts/Overview';
 import TopAlbum from './layouts/TopAlbum';
 import { readTopContents } from '../lib/utils'
 
-const pageName = 'shrines';
-
 export async function getStaticProps() {
-  const categoriesData = readTopContents(pageName)
+  const pageName = 'shrines';
+  const categoriesData = readTopContents(pageName);
   return {
     props: {
       categoriesData

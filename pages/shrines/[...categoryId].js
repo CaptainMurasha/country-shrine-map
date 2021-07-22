@@ -3,12 +3,12 @@ import Overview from '../layouts/Overview';
 import Album from '../layouts/Album';
 import Pagination from '../layouts/Pagination';
 
-import { generatePaths, getTotal, generateContents, getOverview } from "../../lib/utils"
+import { generatePaths, readDetailContents, generateContents, getOverview } from "../../lib/utils"
 
 const pageName = 'shrines';
 
-export default function Post({ categoryId, categoriyList, categoryOverview, totalCount }) {
-  
+export default function Post({ categoryId, pageNumber, categoryOverview, categoriyList, totalCount }) {
+
   return (
     <>
       <header>
@@ -20,7 +20,7 @@ export default function Post({ categoryId, categoriyList, categoryOverview, tota
 
       <Album categoryId={categoryId} contents={categoriyList} />
 
-      <Pagination pageName={pageName} categoryId={categoryId} totalCount={totalCount} />
+      <Pagination pageName={pageName} categoryId={categoryId} totalCount={totalCount} pageNumber={pageNumber} />
     </>
   );
 }
@@ -36,15 +36,19 @@ export function getStaticPaths() {
 export function getStaticProps({ params }) {
   const categoryId = params.categoryId[0];
   const pageNumber = Number(params.categoryId[1]);
-  const categoriyList = generateContents(pageName, categoryId, pageNumber);
+  // ページ先頭に表示するコンテンツを取得
   const categoryOverview = getOverview(pageName, categoryId);
-  const totalCount = getTotal(pageName, categoryId);
+  // 詳細コンテンツをすべて取得
+  const allDetail = readDetailContents(pageName, categoryId);
+  //　画面に表示するコンテンツを切り出す
+  const categoriyList = generateContents(allDetail, pageNumber);
   return {
     props: {
       categoryId,
-      categoriyList,
+      pageNumber,
       categoryOverview,
-      totalCount
+      categoriyList,
+      totalCount : allDetail.length
     }
   }
 }

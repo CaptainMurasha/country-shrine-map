@@ -1,22 +1,27 @@
 import Link from 'next/link';
 
-const Pagination = ({ pageName, categoryId, totalCount }) => {
-  const PER_PAGE = 3;
+import { genarateSerialArray } from '../../lib/pagination'
 
-  const range = (start, end) =>
-        [...Array(end - start + 1)].map((_, i) => start + i)
+const Pagination = ({ pageName, categoryId, totalCount, pageNumber }) => {
 
+  const serialArary = genarateSerialArray(totalCount);
+  const buttons = [];
+  for (const pagenumber of serialArary) {
+    buttons.push(
+    <button type="button" className="btn btn-secondary" key={pagenumber}>
+      <Link href={ `/${pageName}/${categoryId}/${pagenumber}`}>
+        <a>{pagenumber}</a>
+      </Link>
+    </button>);
+  }
+  
   return (
     <>
-      <ul>
-        {range(1, Math.ceil(totalCount / PER_PAGE)).map((number, index) => (
-          <li key={index}>
-            <Link href={ `/${pageName}/${categoryId}/${number}`}>
-              <a>{number}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div className="btn-group mr-2" role="group">
+          {buttons}
+        </div>
+      </div>
     </>
   );
 };
