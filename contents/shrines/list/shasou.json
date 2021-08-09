@@ -1,11 +1,50 @@
 [
-  {"city": "君津市", "aza": "東粟倉", "name": "愛宕神社", "lat":35.2498185, "lang":140.0029165
-    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmytk/80447/"
+  {"city": "鴨川市", "aza": "押切", "name": "御嶽神社", "lat":35.1235749, "lang":140.0590885
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dygg/93653/"
     , "imageUrl":""},
-  {"city": "鴨川市", "aza": "上小原", "name": "白滝山不動教会", "lat":35.1115054, "lang":140.0286981
-    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dksya/48935/"
+  {"city": "鴨川市", "aza": "川代", "name": "熊野神社", "lat":35.1114762, "lang":140.06322
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatr/Dygg/102264/"
+    , "imageUrl":""},
+  {"city": "君津市", "aza": "吉野", "name": "熊野神社", "lat":35.3184677, "lang":140.0920236
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dpkmt/102222/"
+    , "imageUrl":""},
+  {"city": "君津市", "aza": "久留里", "name": "城山明神社", "lat":35.290436, "lang":140.0853432
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Drsag/153012/"
     , "imageUrl":""},
   {"city": "君津市", "aza": "坂畑", "name": "山神社", "lat":35.2335318, "lang":140.0934536
     , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/107994/"
+    , "imageUrl":""},
+  {"city": "君津市", "aza": "箕輪", "name": "熊野神社", "lat":35.3125474, "lang":140.0769421
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dpkmt/102213/"
+    , "imageUrl":""},
+  {"city": "勝浦市", "aza": "小羽戸", "name": "山神社", "lat":35.1859082, "lang":140.264896
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatk/Dkryt/108002/"
+    , "imageUrl":""},
+  {"city": "勝浦市", "aza": "新戸", "name": "玉前神社", "lat":35.1781625, "lang":140.2973757
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatk/Dmyyp/123911/"
+    , "imageUrl":""},
+  {"city": "勝浦市", "aza": "中倉", "name": "熊野神社", "lat":35.2093398, "lang":140.2779531
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatm/Dzasm/102239/"
+    , "imageUrl":""},
+  {"city": "勝浦市", "aza": "中谷", "name": "中谷神社", "lat":35.1724403, "lang":140.2999474
+    , "url": "https://hotokami.jp/area/chiba/Hkmta/Hkmtatk/Dmyyp/130549/"
+    , "imageUrl":""},
+  {"city": "袖ヶ浦市", "aza": "永吉", "name": "熊野神社", "lat":35.4107353, "lang":140.0554577
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptm/Dzrsa/153501/"
+    , "imageUrl":""},
+  {"city": "袖ヶ浦市", "aza": "上泉", "name": "八幡神社", "lat":35.4097571, "lang":140.0475432
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptm/Dzrsa/139810/"
+    , "imageUrl":""},
+  {"city": "袖ヶ浦市", "aza": "川原井", "name": "八幡神社", "lat":35.4144108, "lang":140.0743154
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dmrgr/107994/"
+    , "imageUrl":""},
+  {"city": "袖ヶ浦市", "aza": "林", "name": "熊野神社", "lat":35.4019944, "lang":140.075338
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptm/Dzrsa/102230/"
+    , "imageUrl":""},
+  {"city": "木更津市", "aza": "下郡", "name": "琴平神社", "lat":35.3449941, "lang":140.0361617
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dyazg/105552/"
+    , "imageUrl":""},
+  {"city": "木更津市", "aza": "下郡", "name": "十二所神社", "lat":35.34917, "lang":140.039419
+    , "url": "https://hotokami.jp/area/chiba/Hkmtp/Hkmtptr/Dyazg/109775/"
     , "imageUrl":""}
 ]

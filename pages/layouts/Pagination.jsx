@@ -1,28 +1,28 @@
 import Link from 'next/link';
 
-import { genarateSerialArray } from '../../lib/pagination'
+import { generatePageNumber } from '../../lib/pagination'
 
 const Pagination = ({ pageName, categoryId, totalCount, current }) => {
 
-  const serialArary = genarateSerialArray(totalCount);
+  const pageNumbers = generatePageNumber(totalCount, current);
   const buttons = [];
-  for (const pagenumber of serialArary) {
+  for (const pageNumber of pageNumbers) {
     buttons.push(
-      <button type="button" className="btn btn-secondary" key={pagenumber}>
-        <Link href={`/${pageName}/${categoryId}/${pagenumber}`}>
-          <a>{pagenumber}</a>
+      <li className={`page-item ${(current === pageNumber) ? "disabled" : ""}`} key={pageNumber}>
+        <Link href={`/${pageName}/${categoryId}/${pageNumber}`}>
+          <a className="page-link">{pageNumber}</a>
         </Link>
-      </button>
+      </li>
     );
   }
-  
+
   return (
     <>
-      <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div className="btn-group mr-2" role="group">
+      <nav aria-label="Page navigation example">
+        <ul className="pagination justify-content-center">
           {buttons}
-        </div>
-      </div>
+        </ul>
+      </nav>
     </>
   );
 };

@@ -6,9 +6,8 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 img {
-	width:100%;
 	max-width:100%; /* 画像のはみだしを防ぐ */
-	height: auto; /* 画像の縦横比を維持 */
+	height: 400px; /* 幅に対して高さを固定 */
 	object-fit: cover; /* 画像トリム */
 }
 
