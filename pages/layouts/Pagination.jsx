@@ -9,7 +9,7 @@ const Pagination = ({ pageName, categoryId, totalCount, current }) => {
   const pageNumbers = generatePageNumber(totalCount, current);
   const buttons = [];
   for (const pageNumber of pageNumbers) {
-    const label = isEnds(pageNumber, pageNumbers, totalCount);
+    const label = isEnds(pageNumber, pageNumbers, totalCount, current);
     buttons.push(
       <li className={`page-item ${(current === pageNumber) ? "disabled" : ""}`} key={pageNumber}>
         <Link href={`/${pageName}/${categoryId}/${pageNumber}`}>
