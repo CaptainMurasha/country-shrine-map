@@ -5,7 +5,7 @@ const Album = ({categoryId, contents}) => {
   for (let i = 0; i < contents.length; i++) {
     const content = contents[i];
     contentList.push(
-      <div className="col-4" key={i + 1}>
+      <div className="col-md-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
           <img className="card-img-top" src={process.env.NODE_ENV === 'development' ? 
             `/images/contents/shrines/${categoryId}/${content.city}${content.aza}${content.name}.jpeg`

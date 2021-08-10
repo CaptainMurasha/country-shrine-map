@@ -2,8 +2,6 @@ import Link from 'next/link';
 
 import { generatePageNumber, isEnds } from '../../lib/pagination'
 
-
-
 const Pagination = ({ pageName, categoryId, totalCount, current }) => {
 
   const pageNumbers = generatePageNumber(totalCount, current);
