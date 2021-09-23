@@ -5,7 +5,7 @@ const TopAlbum = ({categoriesData}) => {
   for (let i = 0; i < categoriesData.length; i++) {
     const content = categoriesData[i];
     contentList.push(
-      <div className="col-4" key={content.categoryId}>
+      <div className="col-md-4" key={content.categoryId}>
         <div className="card mb-4 shadow-sm">
           <Link href={`/shrines/${content.categoryId}`}>
             <a><img className="card-img-top" src={`/images/top/shrines/${content.categoryId}.jpeg`} /></a>

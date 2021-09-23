@@ -1,4 +1,4 @@
 out/
 .yarn/*
 .next/*
-public/images/contents/*
+public/images/*
