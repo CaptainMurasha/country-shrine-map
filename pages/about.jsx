@@ -1,5 +1,8 @@
 import Header from './layouts/Header';
-import {Google, Instagram, Hotokami, Twitter} from './icons/SocialMedia'
+import Google from './icons/Google';
+import Instagram from './icons/Instagram';
+import Hotokami from './icons/Hotokami';
+import Twitter from './icons/Twitter';
 
 const aboutPage = () => {
   return (

@@ -1,4 +1,5 @@
-import { HotokamiPage, GoogleOnMarker } from '../icons/SocialMedia';
+import HotokamiPage from '../icons/HotokamiPage';
+import GoogleOnMarker from '../icons/GoogleOnMarker';
 
 const Album = ({categoryId, contents}) => {
   const contentList = [];
@@ -7,9 +8,7 @@ const Album = ({categoryId, contents}) => {
     contentList.push(
       <div className="col-md-4" key={i + 1}>
         <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={process.env.NODE_ENV === 'development' ? 
-            `/images/contents/shrines/${categoryId}/${content.city}${content.aza}${content.name}.jpeg`
-            : content.imageUrl} />
+          <img className="card-img-top" src={`/images/contents/shrines/${categoryId}/${content.city}${content.aza}${content.name}.jpeg`} />
           <div className="card-body">
             <p className="card-text">
               {content.city} {content.aza}<br />
