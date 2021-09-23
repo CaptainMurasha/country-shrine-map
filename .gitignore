@@ -1,4 +1,5 @@
 out/
 .yarn/*
+!.yarn/releases
 .next/*
 public/images/*
