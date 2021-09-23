@@ -1,0 +1,67 @@
+html,
+body {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+img {
+	max-width:100%; /* 画像のはみだしを防ぐ */
+	height: 400px; /* 幅に対して高さを固定 */
+	object-fit: cover; /* 画像トリム */
+}
+
+/** トップページ */
+.shrine-tiles{
+	display: flex;
+	flex-wrap:wrap;
+  margin:0;
+  padding:0;
+}
+.shrine-tiles div {
+	box-sizing:border-box;
+  list-style: none; /* liの謎マーカーを消す */
+}
+.col-4 {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+/* 見出し */
+.overview {
+	text-align: center;
+}
+.overview div {
+  background: #242134; 
+  background: -webkit-linear-gradient(to right, #9E9AB4, #242134);
+  background: linear-gradient(to right, #9E9AB4, #242134);
+}
+
+/* コンテンツ */
+.card-text {
+	font-size: 5px;
+}
+
+/* about */
+.about {
+	text-align: center;
+}
+
+/* ページネーションボタンを中央揃え */
+a {
+	text-decoration: none;
+	float: left; 
+}
+.btn-group-wrap {
+	text-align: center;
+}
+div.btn-group {
+	margin: 0 auto; 
+	text-align: center;
+	width: inherit;
+	display: inline-block;
+}
+.btn-group button{
+	background-color: Gainsboro;
+}

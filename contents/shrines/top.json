@@ -1,0 +1,20 @@
+[
+  {"categoryId":"hikyou", "categoryName":"秘境",
+  "overview":"「ここではないどこか」に迷い込んでしまったような気分になる。"},
+  {"categoryId":"ishidan", "categoryName":"石段",
+    "overview":"悠久の時の中で苔むして摩耗したさまは神社の歴史を今に伝える。"},
+  {"categoryId":"koke", "categoryName":"苔",
+    "overview":"道を覆う一面の深緑。目に優しく心も癒される。"},
+  {"categoryId":"komainu", "categoryName":"狛犬",
+    "overview":"流麗な技巧で造られた傑作から村の石工が頑張って作ったと思われる個性的な作品まで。"},
+  {"categoryId":"kyoboku", "categoryName":"巨木",
+    "overview":"神社とともに歴史を歩んできた大きな木。それ自体が信仰対象になっていることも珍しくない。"},
+  {"categoryId":"shasou", "categoryName":"社叢",
+    "overview":"神域を覆い参拝者を優しく見守る森。"},
+  {"categoryId":"tanbo", "categoryName":"田んぼ",
+    "overview":"郷愁が込み上げる日本の原風景。"},
+  {"categoryId":"umi", "categoryName":"海",
+    "overview":"海を臨み漁師を守ってきた神社。"},
+  {"categoryId":"yama", "categoryName":"山",
+    "overview":"かつては重要な資源として奉られてきた。発見難度、到達難度ともに高いことが多い。"}
+]
